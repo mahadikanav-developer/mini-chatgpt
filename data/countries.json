@@ -1,0 +1,22 @@
+[
+  { "name": "India", "code": "IN", "phoneCode": "+91", "flag": "🇮🇳", "format": "(xxxxx xxxxx)" },
+  { "name": "United States", "code": "US", "phoneCode": "+1", "flag": "🇺🇸", "format": "(xxx) xxx-xxxx" },
+  { "name": "United Kingdom", "code": "GB", "phoneCode": "+44", "flag": "🇬🇧", "format": "+44 xxxx xxxxxx" },
+  { "name": "Canada", "code": "CA", "phoneCode": "+1", "flag": "🇨🇦", "format": "(xxx) xxx-xxxx" },
+  { "name": "Australia", "code": "AU", "phoneCode": "+61", "flag": "🇦🇺", "format": "+61 x xxxx xxxx" },
+  { "name": "Germany", "code": "DE", "phoneCode": "+49", "flag": "🇩🇪", "format": "+49 xxx xxxxxxxx" },
+  { "name": "France", "code": "FR", "phoneCode": "+33", "flag": "🇫🇷", "format": "+33 x xx xx xx xx" },
+  { "name": "Italy", "code": "IT", "phoneCode": "+39", "flag": "🇮🇹", "format": "+39 xxx xxx xxxx" },
+  { "name": "Spain", "code": "ES", "phoneCode": "+34", "flag": "🇪🇸", "format": "+34 xxx xx xx xx" },
+  { "name": "Japan", "code": "JP", "phoneCode": "+81", "flag": "🇯🇵", "format": "+81 xx xxxx xxxx" },
+  { "name": "China", "code": "CN", "phoneCode": "+86", "flag": "🇨🇳", "format": "+86 xxx xxxx xxxx" },
+  { "name": "Brazil", "code": "BR", "phoneCode": "+55", "flag": "🇧🇷", "format": "+55 xx xxxxx xxxx" },
+  { "name": "Mexico", "code": "MX", "phoneCode": "+52", "flag": "🇲🇽", "format": "+52 xxx xxx xxxx" },
+  { "name": "South Africa", "code": "ZA", "phoneCode": "+27", "flag": "🇿🇦", "format": "+27 xx xxx xxxx" },
+  { "name": "Nigeria", "code": "NG", "phoneCode": "+234", "flag": "🇳🇬", "format": "+234 xxx xxx xxxx" },
+  { "name": "Kenya", "code": "KE", "phoneCode": "+254", "flag": "🇰🇪", "format": "+254 xxx xxx xxx" },
+  { "name": "Pakistan", "code": "PK", "phoneCode": "+92", "flag": "🇵🇰", "format": "+92 xxx xxxxxxx" },
+  { "name": "Bangladesh", "code": "BD", "phoneCode": "+880", "flag": "🇧🇩", "format": "+880 xx xxxx xxxx" },
+  { "name": "Thailand", "code": "TH", "phoneCode": "+66", "flag": "🇹🇭", "format": "+66 xx xxx xxxx" },
+  { "name": "Indonesia", "code": "ID", "phoneCode": "+62", "flag": "🇮🇩", "format": "+62 xxx xxxx xxxx" }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "crop": "tomato",
+    "symptom": "yellow leaves",
+    "solution": "This may be due to overwatering or nitrogen deficiency."
+  },
+  {
+    "crop": "wheat",
+    "symptom": "brown spots",
+    "solution": "Possible fungal infection. Use fungicide."
+  }
+]
