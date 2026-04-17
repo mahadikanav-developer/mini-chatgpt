@@ -1,0 +1,301 @@
+.event-card {
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  border-color: #d8d8d8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.event-card-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.event-card-date .day {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff1654;
+}
+
+.event-card-date .month {
+  font-size: 12px;
+  font-weight: 600;
+  color: #505050;
+  text-transform: uppercase;
+}
+
+.event-card-content {
+  flex: 1;
+}
+
+.event-card-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #0a0a0a;
+}
+
+.event-card-location {
+  font-size: 13px;
+  color: #505050;
+  margin-bottom: 8px;
+}
+
+.event-card-stats {
+  font-size: 12px;
+  color: #707070;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.rsvp-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rsvp-status.attending {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.rsvp-status.interested {
+  background-color: #fff3e0;
+  color: #f57f17;
+}
+
+.rsvp-status.not-going {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Detailed View */
+.event-card-detailed {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-card-detailed .event-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.event-date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 12px 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.event-date-box .date-day {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff1654;
+}
+
+.event-date-box .date-month {
+  font-size: 12px;
+  font-weight: 600;
+  color: #505050;
+  text-transform: uppercase;
+}
+
+.event-title-section {
+  flex: 1;
+}
+
+.event-title-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #0a0a0a;
+}
+
+.event-title-section .event-date {
+  font-size: 14px;
+  color: #505050;
+  margin: 0;
+}
+
+.event-title-section .time-remaining {
+  font-size: 12px;
+  color: #ff1654;
+  font-weight: 600;
+  margin: 4px 0 0 0;
+}
+
+.event-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.event-badge.online {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.event-badge.offline {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.event-description {
+  font-size: 14px;
+  color: #505050;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.event-location,
+.event-link {
+  font-size: 13px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.event-location .icon {
+  font-size: 16px;
+}
+
+.event-link a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.event-link a:hover {
+  text-decoration: underline;
+}
+
+.event-stats {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.event-stats .stat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.event-stats .stat .label {
+  font-size: 12px;
+  color: #707070;
+  font-weight: 500;
+}
+
+.event-stats .stat .value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.event-category {
+  font-size: 13px;
+  color: #505050;
+  margin-bottom: 16px;
+}
+
+.rsvp-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rsvp-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rsvp-btn:hover:not(:disabled) {
+  border-color: #d8d8d8;
+  background-color: #e8e8e8;
+}
+
+.rsvp-btn.active {
+  border: none;
+  color: white;
+}
+
+.rsvp-btn.attending.active {
+  background-color: #2e7d32;
+}
+
+.rsvp-btn.interested.active {
+  background-color: #f57f17;
+}
+
+.rsvp-btn.not-going.active {
+  background-color: #c62828;
+}
+
+.rsvp-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .event-card-detailed {
+    padding: 16px;
+  }
+
+  .event-card-detailed .event-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .event-title-section h2 {
+    font-size: 20px;
+  }
+
+  .rsvp-buttons {
+    gap: 6px;
+  }
+
+  .rsvp-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

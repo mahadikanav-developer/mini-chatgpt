@@ -1,0 +1,133 @@
+.reaction-selector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.reaction-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #505050;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.reaction-button:hover:not(:disabled) {
+  background-color: #e8e8e8;
+  transform: scale(1.05);
+}
+
+.reaction-button.active {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.reaction-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.reaction-button .emoji {
+  font-size: 16px;
+}
+
+.reaction-button .label {
+  font-size: 13px;
+}
+
+/* Reaction Picker */
+.reaction-picker {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e8e8e8;
+  z-index: 1000;
+  animation: slideUp 0.15s ease-out;
+  white-space: nowrap;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.reaction-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.reaction-option:hover {
+  transform: scale(1.2);
+}
+
+.reaction-option.selected {
+  transform: scale(1.25);
+}
+
+.reaction-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.reaction-emoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.reaction-label {
+  font-size: 11px;
+  color: #505050;
+  text-align: center;
+  max-width: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .reaction-button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .reaction-button .emoji {
+    font-size: 14px;
+  }
+
+  .reaction-picker {
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .reaction-emoji {
+    font-size: 20px;
+  }
+}

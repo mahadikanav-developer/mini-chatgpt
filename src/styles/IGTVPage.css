@@ -1,0 +1,273 @@
+.igtv-page {
+  padding: 20px;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.igtv-page.loading,
+.igtv-page.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #505050;
+}
+
+.igtv-page.error {
+  color: #ff1654;
+}
+
+.igtv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.igtv-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #505050;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  border-color: #d8d8d8;
+  background-color: #f8f8f8;
+}
+
+.toggle-btn.active {
+  background-color: #0a0a0a;
+  color: white;
+  border-color: #0a0a0a;
+}
+
+.igtv-content {
+  display: flex;
+  gap: 20px;
+}
+
+.video-feed {
+  flex: 1;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.video-card-wrapper {
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.video-card-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-bottom: 177.78%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  gap: 8px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.video-card-wrapper:hover .video-overlay {
+  opacity: 1;
+}
+
+.video-overlay .play-icon {
+  font-size: 48px;
+  color: white;
+}
+
+.video-overlay .duration {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.video-info {
+  padding: 12px;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.video-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #0a0a0a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.video-info .creator {
+  font-size: 12px;
+  color: #505050;
+  margin: 0;
+}
+
+.video-info .stats {
+  font-size: 12px;
+  color: #707070;
+  margin: 4px 0 0 0;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 800px;
+}
+
+.video-player .back-btn {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #0a0a0a;
+  transition: all 0.2s ease;
+}
+
+.video-player .back-btn:hover {
+  background-color: #e8e8e8;
+}
+
+.channels-view {
+  width: 100%;
+}
+
+.channels-view h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #0a0a0a;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.channel-card {
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.channel-card:hover {
+  border-color: #d8d8d8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.channel-image {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.channel-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+  color: #0a0a0a;
+}
+
+.channel-info .username {
+  font-size: 12px;
+  color: #505050;
+  margin: 0;
+}
+
+.channel-info .follower-count {
+  font-size: 11px;
+  color: #707070;
+  margin: 4px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .igtv-page {
+    padding: 12px;
+  }
+
+  .igtv-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .igtv-header h1 {
+    font-size: 24px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .channels-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
